@@ -1,0 +1,29 @@
+Intro and defining regular expression : 
+Regex or regular expression is a sequence of characters to search a specific search pattern.
+Regular Expressions, commonly known as "regex" or "RegExp", are a specially formatted text strings used to 
+find patterns in text. Regular expressions are one of the most powerful tools available today for effective 
+and efficient text processing and manipulations. For example, it can be used to verify whether the format of 
+data i.e. name, email, phone number, etc. entered by the user is correct or not, find or replace matching 
+string within text content, and so on.
+
+Let's begin with a brief overview of the commonly used JavaScript's built-in methods for performing pattern-
+matching before delving deep into the world of regular expressions:
+Function	What it Does
+exec()	Search for a match in a string. It returns an array of information or null on mismatch.
+test()	Test whether a string matches a pattern. It returns true or false.
+search()	Search for a match within a string. It returns the index of the first match, or -1 if not found.
+replace()	Search for a match in a string, and replaces the matched substring with a replacement string.
+match()	Search for a match in a string. It returns an array of information or null on mismatch.
+split()	Splits up a string into an array of substrings using a regular expression.
+lit()	Splits up a string into an array of substrings using a regular expression.
+
+Note: The methods exec() and test() are RegExp methods that takes a string as a parameter, whereas the methods 
+search(), replace(), match() and split() are String methods that takes a regular expression as a parameter.
+
+Defining Regular Expressions
+In JavaScript, regular expressions are represented by RegExp object, which is a native JavaScript object like 
+String, Array, and so on. There are two ways of creating a new RegExp object — one is using the literal 
+syntax, and the other is using the RegExp() constructor.
+
+The literal syntax uses forward slashes (/pattern/) to wrap the regular expression pattern, whereas the 
+constructor syntax uses quotes ("pattern"). 
