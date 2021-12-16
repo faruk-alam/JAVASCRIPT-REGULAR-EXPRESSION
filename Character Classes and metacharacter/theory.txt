@@ -1,0 +1,52 @@
+Specify Pattern Using RegEx:
+To specify regular expressions, metacharacters are used.
+MetaCharacters:
+Metacharacters are characters that are interpreted in a special way by a RegEx engine. Here's a list of 
+metacharacters:
+
+[] . ^ $ * + ? {} () \ |
+
+Character Classes
+Square brackets surrounding a pattern of characters are called a character class e.g. [abc]. A character class 
+always matches a single character out of a list of specified characters that means the expression [abc] 
+matches only a, b or c character.
+
+Negated character classes can also be defined that match any character except those contained within the 
+brackets. A negated character class is defined by placing a caret (^) symbol immediately after the opening 
+bracket, like [^abc], which matches any character except a, b, and c.
+
+You can also define a range of characters by using the hyphen (-) character inside a character class, 
+like [0-9].
+[] - Square brackets
+
+Square brackets specify a set of characters you wish to match.
+
+Expression	String	Matched?
+[abc]	a	1 match
+ac	2 matches
+Hey Jude	No match
+abc de ca	5 matches
+Here, [abc] will match if the string you are trying to match contains any of the a, b or c.
+
+You can also specify a range of characters using - inside square brackets.
+
+[a-e] is the same as [abcde].
+
+[1-4] is the same as [1234].
+
+[0-39] is the same as [01239].
+
+You can complement (invert) the character set by using caret ^ symbol at the start of a square-bracket.
+
+[^abc] means any character except a or b or c.
+
+[^0-9] means any non-digit character.
+
+Regular Expression Flags
+Flags are used with regular expressions that allow various options such as global search, case-insensitive 
+search, etc. They can be used separately or together.
+
+Flags	Description
+g	Performs a global match (find all matches)
+m	Performs multiline match
+i	Performs case-insensitive matching
