@@ -1,0 +1,17 @@
+Pattern Modifiers (Flags):
+
+Pattern Modifiers (Flags)
+A pattern modifier allows you to control the way a pattern match is handled. Pattern modifiers are placed 
+directly after the regular expression, for example, if you want to search for a pattern in a case-insensitive 
+manner, you can use the i modifier, like this: /pattern/i.
+
+The following table lists some of the most commonly used pattern modifiers.
+
+Modifier	What it Does
+g	Perform a global match i.e. finds all occurrences.
+i	Makes the match case-insensitive manner.
+m	Changes the behavior of ^ and $ to match against a newline boundary (i.e. start or end of each line 
+    within a multiline string), instead of a string boundary.
+o	Evaluates the expression only once.
+s	Changes the behavior of . (dot) to match all characters, including newlines.
+x	Allows you to use whitespace and comments within a regular expression for clarity.
