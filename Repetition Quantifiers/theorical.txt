@@ -1,0 +1,9 @@
+Repetition Quantifiers:
+
+we've learnt how to match a single character in a variety of fashions. But what if you want to match on more 
+than one character? For example, let's say you want to find out words containing one or more instances of the 
+letter p, or words containing at least two p's, and so on.
+
+This is where quantifiers come into play. With quantifiers you can specify how many times a character in a 
+regular expression should match. Quantifiers can be applied to the individual characters, as well as classes 
+of characters, and groups of characters contained by the parentheses.
