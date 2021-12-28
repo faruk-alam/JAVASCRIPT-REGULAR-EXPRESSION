@@ -1,0 +1,8 @@
+Word Boundaries :
+A word boundary character ( \b) helps you search for the words that begins and/or ends with a pattern. For 
+example, the regexp /\bcar/ matches the words beginning with the pattern car, and would match cart, carrot, 
+or cartoon, but would not match oscar.
+
+Similarly, the regexp /car\b/ matches the words ending with the pattern car, and would match oscar or 
+supercar, but would not match cart. Likewise, the /\bcar\b/ matches the words beginning and ending with the 
+pattern car, and would match only the word car.
