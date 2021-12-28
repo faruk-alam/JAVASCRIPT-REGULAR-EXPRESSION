@@ -1,0 +1,16 @@
+Grouping:
+Regular expressions use parentheses to group subexpressions, just like mathematical expressions. Parentheses 
+allow a repetition quantifier to be applied to an entire subexpression.
+
+For example, in regexp /go+/ the quantifier + is applied only to the last character o and it matches the 
+strings "go", "goo", and so on. Whereas, in regexp /(go)+/ the quantifier + is applied to the group of 
+characters g and o and it matches the strings "go", "gogo", and so on
+
+
+Note: If the string matches the pattern, the match() method returns an array containing the entire matched 
+string as the first element, followed by any results captured in parentheses, and the index of the whole 
+match. If no matches were found, it returns null.
+
+Tip: If the regular expression includes the g flag, the match() method only returns an array containing all 
+matched substrings rather than match object. Captured groups, index of the whole match, and other properties 
+are not returned.
